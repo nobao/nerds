@@ -20,6 +20,19 @@ img {
 a {
     color: inherit;
     text-decoration: none;
+    outline: none;
+}
+
+button {    
+    padding: 0;
+
+    font: inherit;
+    color: inherit;
+    
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -41,7 +54,7 @@ input[type="radio"].visually-hidden {
 }
 
 .hide-item {
-    display: none;
+    display: none !important;
 }
 
 .button {
@@ -138,7 +151,7 @@ input[type="radio"].visually-hidden {
     margin-left: 197px;
 
     background-image: url("../img/cart-icon.svg");
-    background-position: 0 center;
+    background-position: left bottom 16px;
     background-repeat: no-repeat;
 }
 
@@ -235,4 +248,562 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/slider-button.svg");
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.advantages .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    border-bottom: 2px solid #eeeeee;
+}
+
+.advantages-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.advantages-item {
+    width: 300px;
+}
+
+.advantages-item + .advantages-item {
+    margin-left: 100px;
+}
+
+.advantages-item h3 {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 0;
+
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.advantages-item p {
+    margin: 0;
+    margin-bottom: 31px;
+    padding: 0;
+    width: 260px;
+}
+
+.advantages-item .button {
+    padding-right: 39px;
+    padding-left: 39px;
+}
+
+.advantages-item.app .button {
+    background-color: #00ca74;
+}
+
+.advantages-item.app .button:hover,
+.advantages-item.app .button:focus {
+    background-color: #00bc6c;
+}
+
+.advantages-item.app .active {
+    background-color: #00aa62;
+}
+
+.advantages-item.presentation .button {
+    background-color: #efc84a;
+}
+
+.advantages-item.presentation .button:hover,
+.advantages-item.presentation .button:focus {
+    background-color: #eab534;
+}
+
+.advantages-item.presentation .active {
+    background-color: #e5a722;
+}
+
+.about-us .container {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.about-us .title-wrapper {
+    margin-bottom: 38px;
+    height: 208px;
+
+    background-image: url("../img/nerds-illustration.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.about-us .title-wrapper p {
+    margin: 0;
+    padding: 0;
+    width: 660px;
+}
+
+.about-us .title-wrapper .section-title {
+    padding-top: 38px;
+    margin-bottom: 32px;
+
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.about-us .flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 72px;
+}
+
+.about-us .list-title {
+    margin: 0;
+    padding: 0;
+
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.list-wrapper ul {
+    margin: 0;
+    margin-top: 25px;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.list-wrapper li {
+    position: relative;
+
+    padding-left: 37px;
+}
+
+.list-wrapper li + li {
+    margin-top: 24px;
+}
+
+.list-wrapper li::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 1px;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: #fb565a;
+}
+
+.about-us .list-wrapper {
+    width: 460px;
+}
+
+.about-us .indicator-wrapper {
+    width: 360px;
+}
+
+.indicator-wrapper .list-title {
+    padding-right: 15px;
+
+    text-align: right;
+}
+
+.indicator-wrapper table {
+    margin-top: 40px;
+
+    border-collapse: collapse;
+}
+
+.indicator-wrapper td {
+    position: relative;
+
+    padding-bottom: 20px;
+    width: 120px;
+
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.indicator-wrapper sup {
+    position: absolute;
+    top: 15px;
+    font-size: 25px;
+}
+
+.indicator-wrapper th {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.logo-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 45px 43px 45px 31px;
+
+    list-style-type: none;
+
+    border-top: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.logo-list img {
+    display: block;
+    opacity: 0.2;
+}
+
+.logo-item {
+    position: relative;
+}
+
+.logo-item a:hover img, 
+.logo-item a:focus img {
+    opacity: 1;
+}
+
+.logo-item a:active img {
+    opacity: 0.1;
+}
+
+.logo-item-1 {
+    margin-right: 96px;
+}
+
+.logo-item-2 {
+    margin-right: 103px;
+}
+
+.logo-item-4 {
+    margin-left: auto;
+}
+
+.logo-item-1::after,
+.logo-item-2::after,
+.logo-item-3::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 2px;
+    height: 52px;
+    background-color: #eeeeee;
+}
+
+.logo-item-1::after {
+    right: -51px;
+}
+
+.logo-item-2::after {
+    right: -46px;
+}
+
+.logo-item-3::after {
+    right: -58px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+}
+.map .map-wrapper {
+    position: relative;
+}
+
+.map .map-wrapper::after {
+    content: "";
+
+    position: absolute;
+    bottom: 137px;
+    right: 390px;
+
+    width: 231px;
+    height: 190px;
+
+    background-image: url("../img/map-marker.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.map img {
+    display: block;
+}
+
+.map .container-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.map .contact {    
+    box-sizing: border-box;
+    padding: 47px 50px;
+    width: 319px;
+
+    background-color: #ffffff;
+}
+
+.contact p {
+    margin: 0;
+    padding: 0;
+
+    line-height: 18px;
+}
+
+.contact .contact-title {
+    margin-bottom: 27px;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.contact .tel {
+    margin-top: 18px;
+    margin-bottom: 36px;
+}
+
+.contact .button {
+    padding: 16px 44px;
+}
+
+.main-footer .container {
+    display: flex;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.social-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-right: 140px;
+    padding: 0;
+    width: 260px;
+
+    list-style-type: none;
+}
+
+.social-navigation a {
+    display: block;
+    width: 78px;
+    height: 78px;
+
+    background-color: #e1e1e1;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 39px;
+}
+
+.social-navigation a:hover,
+.social-navigation a:focus {
+    background-color: #e74246;
+}
+
+.social-navigation a:active {
+    background-color: #d7373b;
+    box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
+}
+
+.social-navigation .vk-link {
+    background-image: url("../img/vk-icon.svg");
+}
+
+.social-navigation .vk-link:active {
+    background-image: url("../img/vk-icon-active.svg");
+}
+
+.social-navigation .fb-link {
+    background-image: url("../img/fb-icon.svg");
+}
+
+.social-navigation .fb-link:active {
+    background-image: url("../img/fb-icon-active.svg");
+}
+
+.social-navigation .insta-link {
+    background-image: url("../img/insta-icon.svg");
+}
+
+.social-navigation .insta-link:active {
+    background-image: url("../img/insta-icon-active.svg");
+}
+
+.discount-call p {
+    margin: 0;
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.discount-call .discount-call-title {
+    margin-bottom: 10px;
+
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal.write-us {
+    position: relative;
+
+    box-sizing: border-box;
+    width: 960px;
+    padding: 73px 100px 84px;
+
+    background-color: #ffffff;
+    box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
+}
+
+.modal.write-us .modal-title {
+    margin: 0;
+    margin-bottom: 45px;
+    padding: 0;
+
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.write-us-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.write-us-form .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    margin-bottom: 35px;
+}
+
+.write-us-form .textarea-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 760px;
+    margin-bottom: 47px;
+}
+
+.write-us-form label {
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.write-us-form input,
+.write-us-form textarea {
+    padding: 14px 12px;
+
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #283136;
+
+    border: 2px solid #d7dcde;
+    border-radius: 2px;
+    outline: none;
+}
+
+.write-us-form input:hover,
+.write-us-form textarea:hover {
+    border-color: #b4b9bb;
+}
+
+.write-us-form input:focus,
+.write-us-form textarea:focus {
+    border-color: #000000;
+}
+
+.write-us-form textarea {
+    line-height: 24px;
+
+    resize: vertical;
+}
+
+.write-us-form input::placeholder,
+.write-us-form textarea::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 0.5);
+}
+
+.write-us-form input:focus::placeholder,
+.write-us-form textarea:focus::placeholder {
+    color: rgba(68, 68, 68, 1);
+}
+
+.write-us-form input[type="text"]:invalid:not(:focus):not(:placeholder-shown),
+.write-us-form input[type="email"]:invalid:not(:focus):not(:placeholder-shown) {
+    color: #e74246;
+
+    border-color: #e74246;
+}
+
+.write-us-form button.button {
+    padding: 18px 83px;
+
+    outline: none;
+}
+
+.modal.write-us button.close-btn {
+    position: absolute;
+    top: 78px;
+    right: 90px;
+
+    width: 21px;
+    height: 21px;
+
+    background-image: url("../img/close-cross.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    opacity: 0.3;
+    outline: none;
+}
+
+.modal.write-us button.close-btn:hover {
+    opacity: 1;
+}
+
+.modal.write-us button.close-btn:active {
+    opacity: 0.1;
 }
