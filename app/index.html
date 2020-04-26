@@ -136,13 +136,14 @@
             <div class="map-wrapper">
                 <img src="img/map.jpg" alt="Схема проезда к офису дизайн-студии nёrd's по адресу: 191186, Санкт-Петербург, 
                 улица Большая Конюшенная, дом 19/8" width="1440" height="416">
+                <iframe src="https://yandex.ru/map-widget/v1/-/CWe4a-pC" width="1440" height="416"></iframe>
                 <div class="container-wrapper">
                     <div class="container">
                         <div class="contact">
                             <p class="contact-title">NЁRDS DESIGN STUDIO</p>
                             <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
                             <p class="tel">тел. +7 (812) 275-75-75</p>
-                            <a class="button" href="#">Напишите нам</a>
+                            <a class="button js-open-btn" href="#">Напишите нам</a>
                         </div>
                     </div>
                 </div>                
@@ -165,26 +166,30 @@
         </div>        
     </footer>
 
-    <div class="modal-wrapper hide-item">
-        <div class="modal write-us">
-            <p class="modal-title">Напишите нам</p>
-            <form class="write-us-form" action="https://echo.htmlacademy.ru">
-                <div class="input-wrapper">
-                    <label for="user-name">Ваше имя:</label>
-                    <input type="text" name="name" id="user-name" placeholder="Имя Фамилия" required>
-                </div>
-                <div class="input-wrapper">
-                    <label for="user-email">Ваше e-mail:</label>
-                    <input type="email" name="email" id="user-email" placeholder="email@example.com" required>
-                </div>           
-                <div class="textarea-wrapper">
-                    <label for="user-message">Текст письма:</label>
-                    <textarea name="message" id="user-message" placeholder="В свободной форме" rows="5"></textarea>
-                </div>                
-                <button class="button" type="submit">Отправить</button>
-            </form>
-            <button class="close-btn"><span class="visually-hidden">Закрыть</span></button>
+    <div class="modal-layout hide-item">
+        <div class="modal-overlay">
+            <div class="modal write-us">
+                <p class="modal-title">Напишите нам</p>
+                <form class="write-us-form" action="https://echo.htmlacademy.ru">
+                    <div class="input-wrapper">
+                        <label for="user-name">Ваше имя:</label>
+                        <input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="user-email">Ваше e-mail:</label>
+                        <input type="email" name="email" id="user-email" placeholder="email@example.com">
+                    </div>           
+                    <div class="textarea-wrapper">
+                        <label for="user-message">Текст письма:</label>
+                        <textarea name="message" id="user-message" placeholder="В свободной форме" rows="5"></textarea>
+                    </div>                
+                    <button class="button" type="submit">Отправить</button>
+                </form>
+                <button class="close-btn js-close-btn"><span class="visually-hidden">Закрыть</span></button>
+            </div>
         </div>
     </div>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
